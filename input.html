@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input onKeyPress={check}> -->
+
+    <input type="number" onkeypress="return /(([1-9]{1})?([0-9]{10}))/i.test(event.key)">
+    <!-- <input type="text" onkeypress="return /(?([1-9]{1}))?([0-9]{5})/i.test(event.key)"> -->
+
+
+    <!-- <input type="text" name="price" id="price_per_ticket" class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></div> -->
+
+    <script>
+
+        // var check = (event) => {
+        //     if (!/[0-9]{1}/.test(event.key)) {
+        //         event.preventDefault();
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>

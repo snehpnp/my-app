@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Theme</h1>
+    <button>Click me</button>
+    <select  id="switch" onchange="switchTheme()">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+
+    </select>
+
+    <script>
+        function switchTheme(){
+            const theme =  document.getElementById('switch').value 
+            document.getElementsByTagName("meta")[2].content = theme
+        }
+    </script>
+</body>
+</html>
